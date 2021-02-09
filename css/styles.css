@@ -2,7 +2,7 @@
 /* 
     https://coolors.co/1c2431-181f2a-0b1523-202a3c-65e2d9-339ecc-ff4242-ffffff
 
-                    #1c2431 Raisin Black --> sign-up
+                    #1c2431 Raisin Black -->  intro + sign-up
                     #181f2a Raisin Black (darker) --> body
                     #0b1523 Rich Black --> footer
                     #202a3c Prussian Blue --> testimonials
@@ -39,12 +39,17 @@ img {
 }
 /* ----------------------- HEADER --------------------------- */
 header {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
+    background-color: #1c2431 ;
+    background-image: url("../images/bg-curvy-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
 }
 .header-wrap {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    padding-top: 50px;
     align-items: center;
 }
 .logo-header {
@@ -354,6 +359,9 @@ footer {
 }
 /* ----------------------- MEDIA QUERIES -------------------- */
 @media screen and (min-width: 600px) {
+    header {
+        background-image: url("../images/bg-curvy-desktop.svg");
+    }
     .contact-info {
         display: grid;
         grid-template-columns: 2fr 1fr;
